@@ -9,5 +9,11 @@ It is amazing how we live in a world where we can program in any language like a
 It took me an hour to build the following website because it was my first time creating a website using chatgpt.
 But I'm pretty sure it would've taken me less than 5 minutes if I had prior knowledge on html.
 
-
 I had this [conversation](ConversationHistory.md) with chatgpt to make the website
+
+
+
+# Simplified Prompt for website
+I went through this [conversation](PromptConveration.md) to create a single prompt for writing the entire webpage.
+
+And I was able to comeup with this [single prompt](Prompt_Website.md) for creating the website.
