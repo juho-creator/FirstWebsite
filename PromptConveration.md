@@ -31,7 +31,10 @@ Recreate the webpage exactly as described above, including the same file names a
 <br />
 <br />
 <br />
-__Chatgpt was able to create a pretty damn good prompt! It was time to test it out!__ 
+
+**Chatgpt was able to create a pretty damn good prompt! It was time to test it out!**
+
+ 
   
   
 
