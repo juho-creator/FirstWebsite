@@ -10,4 +10,4 @@ It took me an hour to build the following website because it was my first time c
 But I'm pretty sure it would've taken me less than 5 minutes if I had prior knowledge on html.
 
 
-# Here's the conversation history I had with chatgpt to create the following website :
+I had this [conversation](ConversationHistory.html) with chatgpt to make the website
