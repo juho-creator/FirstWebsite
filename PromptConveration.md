@@ -7,9 +7,10 @@ I told chatgpt to create a prompt for writing the exact code for my website.
 #### You:
 Write a prompt that will allow you to write the exact same code mentioned below. The functionality of the website should work exactly the same, and the file names should be identical too. Give me the prompt and confirm if you can write the exact same code without missing anything with me.Here's the code :
 
-'''<!DOCTYPE html>
+```
+html
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,36 +97,28 @@ Write a prompt that will allow you to write the exact same code mentioned below.
     var audio = new Audio();
     var audioFiles = ['happy_cat_song.mp3', 'banana_cat_crying.mp3'];
     var audioIndex = 0;
-
     function changeBackgroundColor() {
       var body = document.getElementsByTagName('body')[0];
       body.classList.toggle('crazy-colors');
-
       isSurpriseActive = !isSurpriseActive;
-
       var image = document.getElementById('image');
       var gifPath = isSurpriseActive ? 'fast-cat-excited.gif' : 'banana-cat-crying.gif';
       image.src = gifPath;
-
       if (!isSurpriseActive) {
         body.classList.remove('crazy-colors');
       }
-
       audio.pause();
       audio.src = audioFiles[audioIndex];
       audio.loop = true;
       audio.play();
-
       audioIndex = (audioIndex + 1) % audioFiles.length;
     }
   </script>
 </head>
-
 <body>
   <audio autoplay loop>
     <source src="pet-the-peepo.mp3" type="audio/mpeg">
   </audio>
-
   <div class="container">
     <img id="image" src="pepe-the-frog-head-pat.gif" alt="Funny Asian Man">
     <h1>Juho Kim</h1>
@@ -134,7 +127,6 @@ Write a prompt that will allow you to write the exact same code mentioned below.
     <p><a href="https://podcasters.spotify.com/pod/show/juhooray">Check out my AI-generated podcast!</a></p>
     <button class="button" onclick="changeBackgroundColor()">Surprise Me!</button>
   </div>
-
   <script>
     // Calculate age based on birthdate
     var birthdate = new Date('2002-10-08');
@@ -146,7 +138,9 @@ Write a prompt that will allow you to write the exact same code mentioned below.
     }
     document.getElementById('age').textContent = age + ' yrs old';
   </script>
-</body>'''
+</body>
+</html>
+  ```
 
 #### ChatGPT:
 Prompt:
@@ -166,12 +160,16 @@ You need to recreate a webpage with specific functionality and file names. Below
 
 Recreate the webpage exactly as described above, including the same file names and functionality.
 
-
-Chatgpt was able to create a pretty damn good prompt! It was time to test it out.
+<br />
+<br />
+<br />
+*Chatgpt was able to create a pretty damn good prompt! It was time to test it out!*
   
   
 
 # Test_1
+I tested the prompt from the conversation,Prompt Engineering_1 <br />
+
 #### You:
 You need to recreate a webpage with specific functionality and file names. Below is the code for the webpage. The webpage is titled "Juho Kim's Website" and has the following functionality:
 
@@ -197,8 +195,7 @@ To recreate the webpage, you will need to create the following files:
 Here's the code for each file:
 
 **index.html:**
-
-```html
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -274,13 +271,19 @@ Make sure to replace the image source, audio file names, and update the audio fi
 
 Once you have created the HTML, CSS, and JavaScript files, ensure that they are all in the same directory and open the index.html file in a web browser. You should see the recreated webpage with the specified functionality.
 
-  
+<br />
+<br />
+<br />
+
 *As you can see, chatgpt succeeded in giving me multiple codes for building the website. However, I wanted a single html code.
   So I made some changes to my prompt to give me a single html code*
 
 
 # Prompt_Engineering2
 To make Chatgpt to write down all the necessary code on one html file, I modified the prompt slightly. 
+<br />
+<br />
+
 #### You:
 You need to recreate a webpage with specific functionality and file names. Below is the code for the webpage. The webpage is titled "Juho Kim's Website" and has the following functionality:
 
@@ -295,6 +298,8 @@ The webpage displays a button with the text "Surprise Me!" and the class "button
 The webpage includes a script tag that contains JavaScript code for the "changeBackgroundColor()" function. This function toggles the class "crazy-colors" on the body element, changes the image source between "fast-cat-excited.gif" and "banana-cat-crying.gif" based on the state of the "isSurpriseActive" variable, and plays an audio file. The audio file should loop and the source should be chosen from the "audioFiles" array.
 The webpage includes a script tag that calculates the age of Juho Kim based on his birthdate (October 8, 2002) and the current date. The calculated age is then inserted into the subheading with the ID "age".
 Recreate the webpage exactly as described above, including the same file names and functionality.
+<br />
+<br />
 
 #### ChatGPT:
 To recreate the webpage, you will need to create the following files:
@@ -307,7 +312,7 @@ Here's the code for each file:
 
 **index.html:**
 
-```html
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -406,7 +411,7 @@ Recreate the webpage exactly as described above, including the same file names a
 #### ChatGPT:
 Sure! Here's the HTML code for the webpage with the specified functionality:
 
-```html
+```
 <!DOCTYPE html>
 <html>
 <head>
