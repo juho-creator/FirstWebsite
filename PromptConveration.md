@@ -170,9 +170,9 @@ To make Chatgpt to write down all the necessary code on one html file, I modifie
   <br />
 
   #### You:
+```
 We have all the necessary files. You need to write an html code with specific functionality and file names. Below is the code for the webpage. The webpage is titled "Juho Kim's Website" and has the following functionality:
 
-```
 The webpage has a background color of #f2f2f2.
 The webpage uses the Arial font and has a text alignment of center.
 The webpage has a container element with a maximum width of 600px, centered on the page.
