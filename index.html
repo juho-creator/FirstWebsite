@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juho Kim's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        img {
+            width: 300px; /* Adjust the width as needed */
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #004080;
+        }
+
+        .crazy-colors {
+            animation: changeColors 0.5s infinite;
+        }
+
+        @keyframes changeColors {
+            0% {
+                background-color: #0066cc;
+            }
+
+            50% {
+                background-color: #cc0066;
+            }
+
+            100% {
+                background-color: #00cc66;
+            }
+        }
+    </style>
+    <script>
+        var isSurpriseActive = false;
+        var audio = new Audio();
+        var audioFiles = ['happy_cat_song.mp3', 'banana_cat_crying.mp3',];
+        var audioIndex = 0;
+
+        function changeBackgroundColor() {
+            var body = document.getElementsByTagName('body')[0];
+            body.classList.toggle('crazy-colors');
+
+            isSurpriseActive = !isSurpriseActive;
+
+            var image = document.getElementById('image');
+            var gifPath = isSurpriseActive ? 'fast-cat-excited.gif' : 'banana-cat-crying.gif';
+            image.src = gifPath;
+
+            if (!isSurpriseActive) {
+                body.classList.remove('crazy-colors');
+            }
+
+            audio.pause();
+            audio.src = audioFiles[audioIndex];
+            audio.loop = true;
+            audio.play();
+
+            audioIndex = (audioIndex + 1) % audioFiles.length;
+        }
+    </script>
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="pet-the-peepo.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="container">
+        <img id="image" src="pepe-the-frog-head-pat.gif" alt="Funny Asian Man">
+        <h1>Juho Kim</h1>
+        <h2 id="age"></h2>
+        <p>Passionate Programmer!</p>
+        <p><a href="https://podcasters.spotify.com/pod/show/juhooray">Check out my AI-generated podcast!</a></p>
+        <button class="button" onclick="changeBackgroundColor()">Surprise Me!</button>
+    </div>
+
+    <script>
+        // Calculate age based on birthdate
+        var birthdate = new Date('2002-10-08');
+        var currentDate = new Date();
+        var age = currentDate.getFullYear() - birthdate.getFullYear();
+        if (currentDate.getMonth() < birthdate.getMonth() ||
+            (currentDate.getMonth() === birthdate.getMonth() && currentDate.getDate() < birthdate.getDate())) {
+            age--;
+        }
+        document.getElementById('age').textContent = age + ' yrs old';
+    </script>
+</body>
+
+</html>
