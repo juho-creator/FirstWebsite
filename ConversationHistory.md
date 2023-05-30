@@ -1,4 +1,5 @@
-# 중고마켓 요청
+# REMINDER : MAY HAVE MISSING PROMPTS
+
 #### You:
 create a website that does The Following :
 
