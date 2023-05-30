@@ -6,8 +6,8 @@ I told chatgpt to create a prompt for writing the exact code for my website.
 
 #### You:
 Write a prompt that will allow you to write the exact same code mentioned below. The functionality of the website should work exactly the same, and the file names should be identical too. Give me the prompt and confirm if you can write the exact same code without missing anything with me.Here's the code :
-'''
-<!DOCTYPE html>
+
+'''<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -146,8 +146,7 @@ Write a prompt that will allow you to write the exact same code mentioned below.
     }
     document.getElementById('age').textContent = age + ' yrs old';
   </script>
-</body>
-'''
+</body>'''
 
 #### ChatGPT:
 Prompt:
