@@ -1,5 +1,4 @@
 # Creating the prompt for webpage 
-
 ## Prompt Engineering_1
 I told chatgpt to create a prompt for writing the exact code for my website. 
 <br />
@@ -32,7 +31,7 @@ Recreate the webpage exactly as described above, including the same file names a
 <br />
 <br />
 <br />
-**Chatgpt was able to create a pretty damn good prompt! It was time to test it out!**
+__Chatgpt was able to create a pretty damn good prompt! It was time to test it out!__ 
   
   
 
