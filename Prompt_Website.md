@@ -1,3 +1,4 @@
+```
 We have all the necessary files. You need to write an html code with specific functionality and file names. Below is the code for the webpage. The webpage is titled "Juho Kim's Website" and has the following functionality:
 
 The webpage has a background color of #f2f2f2.
@@ -11,3 +12,4 @@ The webpage displays a button with the text "Surprise Me!" and the class "button
 The webpage includes a script tag that contains JavaScript code for the "changeBackgroundColor()" function. This function toggles the class "crazy-colors" on the body element, changes the image source between "fast-cat-excited.gif" and "banana-cat-crying.gif" based on the state of the "isSurpriseActive" variable, and plays an audio file. The audio file should loop and the source should be chosen from the "audioFiles" array.
 The webpage includes a script tag that calculates the age of Juho Kim based on his birthdate (October 8, 2002) and the current date. The calculated age is then inserted into the subheading with the ID "age".
 Recreate the webpage exactly as described above, including the same file names and functionality.
+```
