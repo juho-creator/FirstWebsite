@@ -16,7 +16,8 @@ Surprise me button (alternates color of the website like crazyy on initial click
 #### ChatGPT:
 To create a website based on your requirements, here's an example HTML code:
 
-```html
+```
+html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,7 +107,8 @@ i want a blue button with red text
 #### ChatGPT:
 To create a blue button with red text, you can modify the CSS for the button. Here's an updated version of the code snippet with the requested button style:
 
-```html
+Html : 
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -123,7 +125,8 @@ just give me the code for around blue button with red text saying surprise me
 #### ChatGPT:
 Certainly! Here's the modified code snippet for a blue button with red text that says "Surprise Me":
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -163,7 +166,8 @@ write me a code for change background color function and where should I add it
 #### ChatGPT:
 To add a function that changes the background color of the website, you can modify the existing code. Here's an updated version that includes the function and where you should add it:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -246,7 +250,8 @@ In this code, the `changeBackgroundColor()` function is defined within the `<scr
 
 You can further customize the CSS by adding the following style block within the existing `<style>` tags:
 
-```html
+html
+```
 <style>
     /* Other styles... */
     
@@ -265,7 +270,8 @@ When I press the  surprise me button, i want the webpage color to keep changing 
 #### ChatGPT:
 To make the webpage's background color change randomly each time the "Surprise Me!" button is clicked, you can modify the existing code. Here's an updated version that implements this behavior:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -364,7 +370,9 @@ No when I press the button once, I want the background color to keep changing to
 #### ChatGPT:
 Apologies for the misunderstanding. If you want the background color to continuously change to random colors after clicking the button once, you can use JavaScript's `setInterval` function to repeatedly change the background color at regular intervals. Here's an updated version of the code to achieve this behavior:
 
-```html
+
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -468,6 +476,7 @@ In this updated code, a new variable `intervalId` is introduced to keep track of
 
 #### You:
 Edit the following code so when i press the button once, the background  color of webpage keeps changing, and stops changing when i press it the second time :
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -545,11 +554,12 @@ Edit the following code so when i press the button once, the background  color o
 </body>
 
 </html>
-
+```
 #### ChatGPT:
 Certainly! Here's the modified code that will change the background color of the webpage continuously when the "Surprise Me!" button is clicked once and stop changing when clicked again:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -656,7 +666,8 @@ Can you beautify the website? Because the current website looks like a website f
 #### ChatGPT:
 Certainly! Here's an updated version of the code with a more modern and visually appealing design:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -775,7 +786,8 @@ surprise me button is not working fix it
 #### ChatGPT:
 Apologies for the oversight. It seems that the JavaScript code for toggling the class and changing the background color was missing. Here's an updated version of the code with the fix:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -896,17 +908,10 @@ Apologies for the oversight. It seems that the JavaScript code for toggling the 
             age--;
         }
         document.getElementById('age').textContent = age + ' yrs old';
-   
-```
-
-
-#### ChatGPT:
- </script>
+    </script>
 </body>
-
 </html>
 ```
-
 Now, when you click the "Surprise Me!" button, the background color will start changing randomly. Clicking the button again will stop the color-changing animation.
 
 
@@ -919,7 +924,8 @@ I want you to ADD, DON'T REMOVE ANYTHING, JUST ADD the following features :
 #### ChatGPT:
 Certainly! Here's the updated code with the additional features:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1043,15 +1049,8 @@ Certainly! Here's the updated code with the additional features:
             (currentDate.getMonth() === birthdate.getMonth() && currentDate.getDate() < birthdate.getDate())) {
             age--;
         }
-```
-
-
-#### ChatGPT:
-```
     document.getElementById('age').textContent = age + ' yrs old';
 </script>
-```
-
 </body>
 
 </html>
@@ -1069,7 +1068,9 @@ Add the following functionality to the code on the previous code without making 
 #### ChatGPT:
 To add the requested functionalities without modifying the previous code, you can insert the following code snippet just before the closing `</body>` tag:
 
-```html
+
+html
+```
 <audio id="audio" loop>
     <source id="audio-source" src="happy_cat_song.mp3" type="audio/mpeg">
 </audio>
@@ -1193,6 +1194,7 @@ Make sure to have the audio files (`happy_cat_song.mp3` and `banana_cat_crying.m
 
 #### You:
 fuck i messed up. fix the whole code :
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1340,11 +1342,13 @@ fuck i messed up. fix the whole code :
 </body>
 
 </html>
+```
 
 #### ChatGPT:
 Certainly! I have made the necessary modifications to the code you provided. Here's the updated code:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1468,12 +1472,6 @@ Certainly! I have made the necessary modifications to the code you provided. Her
         <p><a href="https://podcasters.spotify.com/pod/show/juhooray">Check out my AI-generated podcast!</a></p>
         <button class="button" onclick="changeBackgroundColor(); playAudio();">Surprise Me!</button>
     </div>
-
-```
-
-
-#### ChatGPT:
-```
 <script>
     // Calculate age based on birthdate
     var birthdate = new Date('2002-10-08');
@@ -1485,10 +1483,7 @@ Certainly! I have made the necessary modifications to the code you provided. Her
     }
     document.getElementById('age').textContent = age + ' yrs old';
 </script>
-```
-
 </body>
-
 </html>
 ```
 
@@ -1512,7 +1507,8 @@ And so on
 #### ChatGPT:
 Apologies for the confusion. I have updated the code to handle pausing the previous audio and playing a new one when the "Surprise Me!" button is clicked. Here's the modified code:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1634,14 +1630,7 @@ Apologies for the confusion. I have updated the code to handle pausing the previ
         <h2 id="age"></h2>
         <p>Passionate Programmer!</p>
         <p><a href="https://podcasters.spotify.com/pod/show/juhooray">Check out my AI-generated podcast!</a></p>
-        <button class="
-```
-
-
-#### ChatGPT:
-button" onclick="changeBackgroundColor()">Surprise Me!</button> </div>
-
-```
+        <button class="button" onclick="changeBackgroundColor()">Surprise Me!</button> </div>
 <script>
     // Calculate age based on birthdate
     var birthdate = new Date('2002-10-08');
@@ -1653,10 +1642,7 @@ button" onclick="changeBackgroundColor()">Surprise Me!</button> </div>
     }
     document.getElementById('age').textContent = age + ' yrs old';
 </script>
-```
-
 </body>
-
 </html>
 ```
 
@@ -1677,7 +1663,8 @@ Resize the fast-cat-excited.gif  as the same size as banana-cat-crying.gif witho
 #### ChatGPT:
 To resize the `fast-cat-excited.gif` to the same size as `banana-cat-crying.gif` without cropping any parts, you can add some CSS to adjust the dimensions of the image. Here's the modified code:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1791,7 +1778,6 @@ To resize the `fast-cat-excited.gif` to the same size as `banana-cat-crying.gif`
         }
     </script>
 </head>
-
 <body>
     <div class="container">
         <img id="image" src="banana-cat-crying.gif" alt="Funny Asian Man">
@@ -1799,13 +1785,7 @@ To resize the `fast-cat-excited.gif` to the same size as `banana-cat-crying.gif`
         <h2 id="age"></h2>
         <p>Passionate Programmer!</p>
         <p><a href="https://podcasters.spotify.com/pod/show/juhooray">Check out my
-```
-
-
-#### ChatGPT:
 AI-generated podcast!</a></p> <button class="button" onclick="changeBackgroundColor()">Surprise Me!</button> </div>
-
-```
 <script>
     // Calculate age based on birthdate
     var birthdate = new Date('2002-10-08');
@@ -1817,10 +1797,7 @@ AI-generated podcast!</a></p> <button class="button" onclick="changeBackgroundCo
     }
     document.getElementById('age').textContent = age + ' yrs old';
 </script>
-```
-
 </body>
-
 </html>
 ```
 
@@ -1842,7 +1819,8 @@ Give me a specific code for the following only: Code to play  pet-the-peepo.mp3 
 #### ChatGPT:
 Sure! Here's a code snippet that you can use to play the "pet-the-peepo.mp3" audio file when the webpage loads:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1876,6 +1854,7 @@ Make sure you have the "pet-the-peepo.mp3" file in the same directory as your HT
 
 #### You:
 wait just give me the full code with the changes implemented on the previous code , this one :
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -2014,11 +1993,13 @@ wait just give me the full code with the changes implemented on the previous cod
 </body>
 
 </html>
+```
 
 #### ChatGPT:
 Certainly! Here's the modified code with the changes implemented:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -2153,7 +2134,8 @@ is pet the peepo included in this code
 #### ChatGPT:
 Apologies for the oversight. In the provided code, the "pet-the-peepo.mp3" file is not included. If you want to add the "pet-the-peepo.mp3" audio file to play at the initial page of the website, you can include the following code snippet within the `<body>` tag:
 
-```html
+html
+```
 <audio autoplay loop>
     <source src="pet-the-peepo.mp3" type="audio/mpeg">
 </audio>
@@ -2161,7 +2143,8 @@ Apologies for the oversight. In the provided code, the "pet-the-peepo.mp3" file 
 
 Here's the modified code with the addition of the "pet-the-peepo.mp3" audio file:
 
-```html
+html
+```
 <!DOCTYPE html>
 <html lang="en">
 
